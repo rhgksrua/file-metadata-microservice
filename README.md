@@ -17,3 +17,9 @@ Returns JSON
     "size": "200"
 }
 ```
+
+[DEMO](https://filemetadatahank.herokuapp.com/api)
+
+#### Notes
+
+Heroku only allows `./tmp` directory for writing.
