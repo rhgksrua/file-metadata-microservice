@@ -17,7 +17,7 @@ app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/templates');
 app.set('view engine', 'jade');
 
-app.use('/', index);
+//app.use('/', index);
 app.use('/api', api);
 
 app.listen(port, function() {
