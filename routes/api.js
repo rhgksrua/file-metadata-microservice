@@ -12,7 +12,6 @@ router.post('/filemetadata', upload.single('files'), metadataController);
 
 function indexController(req, res) {
     res.render('index');
-    
 }
 
 function metadataController(req, res) {

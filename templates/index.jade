@@ -1,10 +1,20 @@
 doctype html
 html(lang='en')
     head
-        meta()
+        meta(name="viewport", content="width=device-width", initial-scale=1)
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+        link(rel="stylesheet", href="main.css")
     body
-        form(action='/api/filemetadata', method='post', enctype='multipart/form-data')
-            fieldset
-                label Upload File
-                input(type='file' name='files')
-                input(type='submit')
+        .well.well-lg
+            h1 File Metadata Microservice
+            form(action='/api/filemetadata', method='post', enctype='multipart/form-data')
+                .form-group
+                    label Upload File
+                    input(type='file' name='files')
+                input(type='submit').btn.btn-default
+        article
+            h3 Usage
+            p Upload files
+        article
+            h3 Output
+            pre { "size": 404 }
